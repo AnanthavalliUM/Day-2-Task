@@ -1,0 +1,48 @@
+Difference between Javascript and Nodejs:
+Java script :
+
+Type: JavaScript is a programming language, which runs in web browsers.
+Running engine:  Javascript run in any engine like spider monkey (firefox), v8 (google chrome), javascript core (safari)
+Applications: Browser.js is used in frontend, mainly used for client-side applications like validations on a web page or dynamic page display.
+Moduling : In javascript browser moduling is not mandatory.
+System access: Browser.js is sandboxed for the safety purposes and has access limited to the browser.
+
+Node js:
+
+Type: Node.js is an interpreter or running environment for JavaScript, which holds a lot of required libraries and all.
+Running engine: Node JS only runs on a V8 engine which is mainly used by google chrome. 
+And javascript program which will be written under this Node JS will be always run in V8 Engine
+Applications: Node.js is used in backend mainly used for server-side applications.
+Moduling: In Node js everything is a module,it is mandatory to keep everything inside a module
+System access: Node.js has full system access i.e can read and write directly to the file system like any other application that also concludes that we can write complete software using Node.js
+
+
+How does browser will render a website:
+       The basic structure for rendering a website is that one will parse html and another one will parse css are combined into a render tree.After that layout put a render tree in absolute position and then paint put some graphics on and give the visual output.
+The very first is parsing the html. In html if we make a mistake it will try to recover it, it is a forgiving language. for eg: If we give without head or if we don't close the tag it will automatically recover it. 
+Then the Tokenization will happen, it takes the text and into tokens, and then it will create a parse tree and then dom tree and then goes to script execution. In some situations it will stop parsing the html when it hits a script tag it needs to actually stop if it's a non newline script it needs to pause.
+In meanwhile let see about the Speculative parsing. It means it parses ahead while scripts are being downloaded and executed. The HTML parser starts speculative loads for scripts, style sheets and images it finds. 
+After that css parsing will start, the css object model is like a dom object model. Basically css can have a style sheet, selectors, rules and decoration. Render tree is a multiple tree like render object, render styles, render layers, and line boxes. There is no one to one mapping in the render tree. 
+Then in the layout process the render tree will layout the children's height and width. In a batch layout when something changes in DOM then the render tree will relayout the browser.Coming to the Performance insight the best way to do that is actually to take your reads in one go and your writes in one go. 
+Fast DOM will give you an API to do all your reading and writing . At last in paint it will take all the information from the render tree and paint the things to give a visual output.
+
+Task : 4
+
+typeof(1) - number
+
+typeof('1.1') - string
+
+typeof(true) - boolean
+
+typeof(null) - object
+
+typeof(undefined) - undefined
+
+typeof([]) - object
+
+typeof({}) - object
+
+typeof(NaN) - number
+
+
+
